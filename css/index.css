@@ -164,3 +164,22 @@ body {
   height: 750px;
   width: 75%;
 }
+.containerDiv .experienceDiv .experienceHeader {
+  color: black;
+  text-decoration: underline;
+  font-size: 2rem;
+  margin-top: 2%;
+  padding-left: 2%;
+}
+.containerDiv .experienceDiv .experienceHeader .jobTitle {
+  padding: 3%;
+  font-weight: bold;
+  text-decoration: none;
+}
+.containerDiv .experienceDiv .experienceHeader .jobTitle .jobDescription {
+  font-weight: normal;
+  text-decoration: none !important;
+  list-style-type: disc;
+  padding: 3%;
+  font-size: 1.75rem;
+}
