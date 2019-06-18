@@ -133,4 +133,15 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 65%;
+}
+.titleDiv {
+  background-color: #193d77;
+  color: white;
+  font-size: 4rem;
+  height: 150px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
