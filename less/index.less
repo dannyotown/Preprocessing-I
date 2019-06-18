@@ -21,7 +21,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: 'Roboto', sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -76,14 +76,24 @@ html, body {
 	justify-content: center;
 }
 .containerDiv{
-	.flexDivs()
+	.flexDivs();
 
 	.personalInfoDiv{
-		width: 33%;
-		background: lightgray;
+		width: 25%;
+		height: 750px;
+		background-color: lightgray;
+
+		.personalHeader{
+			text-align: center;
+			margin-top: 5%;
+			color: @backGroundBlue;
+			font-size: 3rem;
+		}
 	}
+
 	.experienceDiv{
-		
+		height: 750px;
+		width: 75%;
 	}
 }
 
