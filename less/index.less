@@ -60,6 +60,11 @@ html, body {
 @backGroundBlue : #193d77;
 @textColorWhite : white;
 
+.flexDivs(){
+	display: flex;
+	flex-direction: row;
+}
+
 .titleDiv{
 	background-color: @backGroundBlue;
 	color: @textColorWhite;
@@ -70,3 +75,16 @@ html, body {
 	flex-direction: column;
 	justify-content: center;
 }
+.containerDiv{
+	.flexDivs()
+
+	.personalInfoDiv{
+		width: 33%;
+		background: lightgray;
+	}
+	.experienceDiv{
+		
+	}
+}
+
+
