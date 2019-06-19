@@ -1,19 +1,185 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  <script>
+    $(document).ready(function () {
+      $('body').css('display', 'none');
+      $('body').fadeIn(1000);
+    });
+    function hideAboutMe(){
+      $('#aboutMeHeader').css('display','none');
+      $('#showAboutMeText').css('display','inline-block');
+
+    }
+    function showAboutMe(){
+      $('#aboutMeHeader').css('display','block');
+      $('#showAboutMeText').css('display','none');
+    }
+
+  </script>
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="titleDiv">
+    <h1>Danny Town</h1>
+    <h2>Software Developer</h2>
+  </div>
+  <div class="containerDiv">
+    <div class="experienceDiv">
+        <div class="experienceHeader" id="aboutMeHeader">
+            <h2>About Me<button class="hideAboutMe" onclick="hideAboutMe()">(Hide This)</button></h2>
+            <div class="jobTitle">
+              <p>Hi!</p>
+              <ul class="jobDescription">
+                <p>In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id sit amet ipsum. <br>
+                    Donec eget mi id mi imperdiet maximus non ut justo. Donec sit amet efficitur ligula.<br>
+                    In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id sit amet ipsum.<br>
+                    Issa leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id sit amet ipsum.</p>
+              </ul>
+            </div>
+          </div>
+      <div class="experienceHeader">
+        <h2>Experience<button class="hideAboutMe" id="showAboutMeText" onclick="showAboutMe()" style="display: none;">(Show About Me)</button></h2>
+        <div class="jobTitle">
+          <p>Quia Dolor</p>
+          <ul class="jobDescription">
+            <li>In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id
+              sit amet ipsum.</li>
+            <li>Donec eget mi id mi imperdiet maximus non ut justo. Donec sit amet efficitur ligula.</li>
+            <li>In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id
+              sit amet ipsum.</li>
+            <li>Issa leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id sit
+              amet ipsum.</li>
+          </ul>
+        </div>
+        <div class="jobTitle">
+          <p>Quia Dolor</p>
+          <ul class="jobDescription">
+            <li>In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id
+              sit amet ipsum.</li>
+            <li>Donec eget mi id mi imperdiet maximus non ut justo. Donec sit amet efficitur ligula.</li>
+            <li>In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id
+              sit amet ipsum.</li>
+            <li>Issa leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id sit
+              amet ipsum.</li>
+          </ul>
+        </div>
+        <div class="jobTitle">
+          <p>Quia Dolor</p>
+          <ul class="jobDescription">
+            <li>In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id
+              sit amet ipsum.</li>
+            <li>Donec eget mi id mi imperdiet maximus non ut justo. Donec sit amet efficitur ligula.</li>
+            <li>In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id
+              sit amet ipsum.</li>
+            <li>Issa leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id sit
+              amet ipsum.</li>
+          </ul>
+        </div>
+        <div class="jobTitle">
+          <p>Quia Dolor</p>
+          <ul class="jobDescription">
+            <li>In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id
+              sit amet ipsum.</li>
+            <li>Donec eget mi id mi imperdiet maximus non ut justo. Donec sit amet efficitur ligula.</li>
+            <li>In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id
+              sit amet ipsum.</li>
+            <li>Issa leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id sit
+              amet ipsum.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="personalInfoDiv">
+      <div class="personalHeader">
+        <h2>Personal Info</h2>
+        <div class="personalInfoContainer">
+          <div class="emailInfo">
+            <h2 class="infoHeader">
+              Email
+            </h2>
+            <p class="infoContent">
+              dannyotown@gmail.com
+            </p>
+          </div>
+          <div class="phoneInfo">
+            <h2 class="infoHeader">
+              Phone
+            </h2>
+            <p class="infoContent">
+              (317)952-3942
+            </p>
+          </div>
+          <div class="addressInfo">
+            <h2 class="infoHeader">
+              Address
+            </h2>
+            <p class="infoContent">
+              123 Wallaby Way <br>
+              StopCreeping, Texas 39523
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="personalHeader">
+        <h2>Projects</h2>
+        <div class="projectinfoContainer">
+          <div class="gitHubInfo">
+            <ul>
+              <li>---Project 1---</li>
+              <li>---Project 2---</li>
+              <li>---Project 3---</li>
+              <li>---Project 4---</li>
+              <li>---Project 5---</li>
+              <li>---Project 6---</li>
+              <li>---Project 7---</li>
+              <li>---Project 8---</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="personalHeader">
+        <h2>Skills</h2>
+        <div class="projectinfoContainer">
+          <div class="gitHubInfo">
+            <ul>
+              <li>viverra sed diam</li>
+              <li>amet mauris faucibus</li>
+              <li>viverra sed diam</li>
+              <li>amet mauris faucibus</li>
+              <li>viverra sed diam</li>
+              <li>amet mauris faucibus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="personalHeader">
+        <h2>Social Media</h2>
+        <div class="projectinfoContainer">
+          <div class="gitHubInfo">
+            <ul class="socialMedias">
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>LinkedIn</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
