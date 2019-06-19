@@ -18,6 +18,16 @@
       $('body').css('display', 'none');
       $('body').fadeIn(1000);
     });
+    function hideAboutMe(){
+      $('#aboutMeHeader').css('display','none');
+      $('#showAboutMeText').css('display','inline-block');
+
+    }
+    function showAboutMe(){
+      $('#aboutMeHeader').css('display','block');
+      $('#showAboutMeText').css('display','none');
+    }
+
   </script>
 </head>
 
@@ -28,8 +38,20 @@
   </div>
   <div class="containerDiv">
     <div class="experienceDiv">
+        <div class="experienceHeader" id="aboutMeHeader">
+            <h2>About Me<button class="hideAboutMe" onclick="hideAboutMe()">(Hide This)</button></h2>
+            <div class="jobTitle">
+              <p>Hi!</p>
+              <ul class="jobDescription">
+                <p>In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id sit amet ipsum. <br>
+                    Donec eget mi id mi imperdiet maximus non ut justo. Donec sit amet efficitur ligula.<br>
+                    In nulla leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id sit amet ipsum.<br>
+                    Issa leo, blandit vel commodo sed, viverra sed diam. In in dolor sit amet mauris faucibus luctus id sit amet ipsum.</p>
+              </ul>
+            </div>
+          </div>
       <div class="experienceHeader">
-        <h2>Experience</h2>
+        <h2>Experience<button class="hideAboutMe" id="showAboutMeText" onclick="showAboutMe()" style="display: none;">(Show About Me)</button></h2>
         <div class="jobTitle">
           <p>Quia Dolor</p>
           <ul class="jobDescription">

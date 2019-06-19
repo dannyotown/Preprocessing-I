@@ -161,7 +161,7 @@ body {
 }
 .containerDiv .personalInfoDiv {
   width: 25%;
-  height: 950px;
+  height: 100%;
   background-color: #6699FF;
 }
 @media (max-width: 750px) {
@@ -284,6 +284,13 @@ body {
 }
 .containerDiv .experienceDiv .experienceHeader h2 {
   text-decoration: underline;
+}
+.containerDiv .experienceDiv .experienceHeader .hideAboutMe {
+  background-color: white;
+  font-size: 0.8rem;
+  margin-left: 1%;
+  color: lightslategrey;
+  border: none;
 }
 .containerDiv .experienceDiv .experienceHeader .jobTitle {
   margin: 3% 3% 0% 3%;
