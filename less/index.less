@@ -63,11 +63,19 @@ html, body {
 .flexDivs(){
 	display: flex;
 	flex-direction: row;
+
+	@media (max-width:600px){
+		flex-direction: column;
+	}
 }
 .jobTitleStyle(){
-	padding: 3%;
+	margin: 3% 3% 0% 3%;
 	font-weight: bold;
 	text-decoration: none;
+}
+.infoContainerPadding(){
+	margin:5% 3% 3% 3%;
+	
 }
 
 .titleDiv{
@@ -79,43 +87,130 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	@media (max-width:600px){
+		text-align: center;
+	}
 }
 .containerDiv{
 	.flexDivs();
 
 	.personalInfoDiv{
 		width: 25%;
-		height: 750px;
+		height: 100%;
 		background-color: lightgray;
+		@media (max-width:600px){
+			width: 100%;
+		}
 
 		.personalHeader{
 			text-align: center;
 			margin-top: 5%;
 			color: @backGroundBlue;
 			font-size: 3rem;
+
+			@media (max-width:1200px){
+				font-size: 2rem;
+			}
+
+			.personalInfoContainer{
+				.infoContainerPadding();
+
+				.infoHeader{
+					font-size: 2rem;
+					color: @textColorWhite;
+					text-align: left;
+					padding-left: 5%;
+					@media (max-width:1200px){
+						font-size: 1.5rem;
+					}
+
+					@media (max-width:600px){
+						text-align: center;
+						padding-left: 0%;
+						margin-top: 2%;
+					}
+				}
+				.infoContent{
+					color: @textColorWhite;
+					padding: 5%;
+					margin-left: 2%;
+					text-align: left;
+					font-size: 2rem;
+
+					@media (max-width:1200px){
+						font-size: 1rem;
+					}
+
+					@media (max-width:600px){
+						text-align: center;
+						margin-left: 0;
+						padding: 3%;
+					}
+				}
+			}
+			.projectinfoContainer{
+				.infoContainerPadding();
+				.gitHubInfo{
+					color: @textColorWhite;
+					margin-top: 2%;
+					font-size: 2rem;
+
+					@media (max-width:1200px){
+						font-size: 1.5rem;
+					}
+
+					li{
+						margin-top: 3%;
+					}
+					.socialMedias{
+						display: flex;
+						flex-direction: row;
+						flex-wrap: nowrap;
+						justify-content: center;
+						li{
+							font-size: 1.5rem;
+							font-weight: bold;
+							margin-left: 3%;
+							margin-bottom: 5%;
+							@media (max-width:1200px){
+								font-size: 1rem;
+							}
+						}
+					}
+				}
+
+			}
 		}
 	}
 
 	.experienceDiv{
-		height: 750px;
+		height: 100%;
 		width: 75%;
+		@media (max-width:600px){
+			width: 100%;
+			margin-bottom: 5%;
+		}
 		
 		.experienceHeader{
 			color: black;
-			text-decoration: underline;
 			font-size: 2rem;
 			margin-top:2%;
 			padding-left: 2%;
+
+			h2{
+				text-decoration: underline;
+			}
 			
 			.jobTitle{
 				.jobTitleStyle();
 				
 				.jobDescription{
 					font-weight: normal;
-					text-decoration: none !important;
 					list-style-type:disc;
-					padding: 3%;
-					font-size: 1.75rem;
+					line-height: 2.2rem;
+					padding: 2% 2% 0% 2%;
+					font-size: 1.8rem;
 				}
 
 			}

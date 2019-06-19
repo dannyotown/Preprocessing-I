@@ -145,14 +145,29 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 600px) {
+  .titleDiv {
+    text-align: center;
+  }
+}
 .containerDiv {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 600px) {
+  .containerDiv {
+    flex-direction: column;
+  }
+}
 .containerDiv .personalInfoDiv {
   width: 25%;
-  height: 750px;
+  height: 100%;
   background-color: lightgray;
+}
+@media (max-width: 600px) {
+  .containerDiv .personalInfoDiv {
+    width: 100%;
+  }
 }
 .containerDiv .personalInfoDiv .personalHeader {
   text-align: center;
@@ -160,26 +175,112 @@ body {
   color: #193d77;
   font-size: 3rem;
 }
+@media (max-width: 1200px) {
+  .containerDiv .personalInfoDiv .personalHeader {
+    font-size: 2rem;
+  }
+}
+.containerDiv .personalInfoDiv .personalHeader .personalInfoContainer {
+  margin: 5% 3% 3% 3%;
+}
+.containerDiv .personalInfoDiv .personalHeader .personalInfoContainer .infoHeader {
+  font-size: 2rem;
+  color: white;
+  text-align: left;
+  padding-left: 5%;
+}
+@media (max-width: 1200px) {
+  .containerDiv .personalInfoDiv .personalHeader .personalInfoContainer .infoHeader {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .containerDiv .personalInfoDiv .personalHeader .personalInfoContainer .infoHeader {
+    text-align: center;
+    padding-left: 0%;
+    margin-top: 2%;
+  }
+}
+.containerDiv .personalInfoDiv .personalHeader .personalInfoContainer .infoContent {
+  color: white;
+  padding: 5%;
+  margin-left: 2%;
+  text-align: left;
+  font-size: 2rem;
+}
+@media (max-width: 1200px) {
+  .containerDiv .personalInfoDiv .personalHeader .personalInfoContainer .infoContent {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .containerDiv .personalInfoDiv .personalHeader .personalInfoContainer .infoContent {
+    text-align: center;
+    margin-left: 0;
+    padding: 3%;
+  }
+}
+.containerDiv .personalInfoDiv .personalHeader .projectinfoContainer {
+  margin: 5% 3% 3% 3%;
+}
+.containerDiv .personalInfoDiv .personalHeader .projectinfoContainer .gitHubInfo {
+  color: white;
+  margin-top: 2%;
+  font-size: 2rem;
+}
+@media (max-width: 1200px) {
+  .containerDiv .personalInfoDiv .personalHeader .projectinfoContainer .gitHubInfo {
+    font-size: 1.5rem;
+  }
+}
+.containerDiv .personalInfoDiv .personalHeader .projectinfoContainer .gitHubInfo li {
+  margin-top: 3%;
+}
+.containerDiv .personalInfoDiv .personalHeader .projectinfoContainer .gitHubInfo .socialMedias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.containerDiv .personalInfoDiv .personalHeader .projectinfoContainer .gitHubInfo .socialMedias li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 3%;
+  margin-bottom: 5%;
+}
+@media (max-width: 1200px) {
+  .containerDiv .personalInfoDiv .personalHeader .projectinfoContainer .gitHubInfo .socialMedias li {
+    font-size: 1rem;
+  }
+}
 .containerDiv .experienceDiv {
-  height: 750px;
+  height: 100%;
   width: 75%;
+}
+@media (max-width: 600px) {
+  .containerDiv .experienceDiv {
+    width: 100%;
+    margin-bottom: 5%;
+  }
 }
 .containerDiv .experienceDiv .experienceHeader {
   color: black;
-  text-decoration: underline;
   font-size: 2rem;
   margin-top: 2%;
   padding-left: 2%;
 }
+.containerDiv .experienceDiv .experienceHeader h2 {
+  text-decoration: underline;
+}
 .containerDiv .experienceDiv .experienceHeader .jobTitle {
-  padding: 3%;
+  margin: 3% 3% 0% 3%;
   font-weight: bold;
   text-decoration: none;
 }
 .containerDiv .experienceDiv .experienceHeader .jobTitle .jobDescription {
   font-weight: normal;
-  text-decoration: none !important;
   list-style-type: disc;
-  padding: 3%;
-  font-size: 1.75rem;
+  line-height: 2.2rem;
+  padding: 2% 2% 0% 2%;
+  font-size: 1.8rem;
 }
